@@ -16,15 +16,10 @@ package {
     default_applicable_licenses: ["external_python_cachetools_license"],
 }
 
-// Added automatically by a large-scale-change
-// See: http://go/android-license-faq
-license {
-    name: "external_python_cachetools_license",
-    visibility: [":__subpackages__"],
-    license_kinds: [
-        "SPDX-license-identifier-MIT",
-    ],
-    license_text: [
-        "LICENSE",
+python_library {
+    name: "py-cachetools",
+    host_supported: true,
+    srcs: [
+        "cachetools/*.py",
     ],
 }
